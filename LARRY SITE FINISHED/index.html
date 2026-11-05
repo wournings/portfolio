@@ -1,0 +1,726 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- 
+	Coded by:
+  _______ _            ____                                                              
+ |__   __| |          |  _ \                                                             
+    | |  | |__   ___  | |_) |_ __ ___   __ _ _ __ __ _ _ __ ___  _ __ ___   ___ _ __ ___ 
+    | |  | '_ \ / _ \ |  _ <| '__/ _ \ / _` | '__/ _` | '_ ` _ \| '_ ` _ \ / _ \ '__/ __|
+    | |  | | | |  __/ | |_) | | | (_) | (_| | | | (_| | | | | | | | | | | |  __/ |  \__ \
+    |_|  |_| |_|\___| |____/|_|  \___/ \__, |_|  \__,_|_| |_| |_|_| |_| |_|\___|_|  |___/
+                                        __/ |                                            
+                                       |___/                                             
+   	
+   	Need a website? Hit us up.
+-->
+
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			Larry Goode Illustration and Design
+		</title>
+		<script type="text/javascript" src="slide/js/jquery-3.2.1.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+		<script type="text/javascript" src="slide/js/jquery.cycle2.min.js"></script>
+		<script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+		<script type="text/javascript" src="slide/js/animatescroll/animatescroll.noeasing.js"></script>
+		<link rel = "stylesheet" type = "text/css" href = "slide/style.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="slide/mobile.css" />
+	</head>
+	<body>
+
+	<!-- Fade In/Out -->
+
+	<script>
+
+	/* In */
+	jQuery('body').css('display','none');
+	jQuery(document).ready(function() {
+		jQuery('body').fadeIn();
+
+	/* Out */
+		jQuery('a').on('click',function(event){
+			var thetarget = this.getAttribute('target')
+			if (thetarget != "_blank"){			
+				var thehref = this.getAttribute('href')
+				event.preventDefault();
+				jQuery('body').fadeOut(function(){
+					window.location = thehref					
+				});
+			}
+		});
+	});
+	setTimeout(function(){
+		jQuery('body').fadeIn();
+	},1000)
+</script>
+
+	<!-- End Fade In/Out --> 
+
+		<script language="javascript">
+			$(window).scroll(function(){
+    		$(".background-top").css("opacity", 1 - $(window).scrollTop() / 15000);
+  			});
+		</script>
+
+	<!-- Nav Menu --> 
+<nav>
+  <ul>
+  	<button class="design">Design</button>
+  	<button class="illustration">Illustration</button>
+  	<button class="about">About</button>
+  	<div class="blackbox"></div>
+  	<div class="aboutmenu"><h1><img src="slide/images/x.png" class="x">about <ul class="sm">
+  <li class="youtube"><a class="sma" href="https://www.instagram.com/larryduane/" target="_blank"><img src="slide/images/instagram.png"></a></li>
+  <li class="facebook"><a class="sma" href="https://www.facebook.com/larry.goode1?ref=br_rs" target="_blank"><img src="slide/images/facebook.png"></a></li>
+  <li class="mail"><a class="sma" href="mailto:lgoode@larrygoode.com" target="_blank"><img src ="slide/images/mail.png"></a></li>
+  </ul></h1>
+  	<p>Hello! I’m a graphic designer, illustrator and artist living in Austin, Texas. I hold a
+	MFA from Texas State University and a BFA from the University of Texas at Austin.
+	My experience in graphic design and Illustration extends from producing digital and
+	print design for professional clients, to printing supervision and budgeting, to
+	owning and operating a graphic design firm. I have created design and illustration
+	for a diverse group of national and international clients including, CNN, Dell,
+	Motorola, Mac World Magazine, Computer World, The University of Texas at Austin,
+	Texas State University, and Inc. Magazine. My work has been recognized through
+	awards from the Austin Ad Federation, Society of Illustrators, and the Dallas Society
+	of Visual Communication. I strive for effective and elegant creative solutions—as is
+	appropriate for each project. I’m also a professor at Austin Community College
+	where I teach graphic design and illustration.
+	I have a keen interest in art and my paintings and assemblage has been exhibited in
+	numerous galleries and is included in a number of collections including, The Art
+	Institute of Chicago special collections library, the Seton hospital collection, and the
+	Austin Bergstrom International Airport. My work has also been featured in the HBO
+	series, The Leftovers. In addition, I have written and directed a number of short films.</p><br>
+	<p>Larry Goode<br>
+2014 Brentwood St.<br>
+Austin, Texas 78757<br>
+512-467-7471<br>
+lgoode@larrygoode.com</p>
+	</div>
+	
+	<div class="designmenu"><h1><img src="slide/images/x.png" class="x">design</h1>
+	<ul>
+	<button onclick="$('#section1').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Burton&#8217;s Big Adventure</button>
+	<button onclick="$('#section2').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">La Loteria</button>
+	<button onclick="$('#section3').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Various Logos</button>
+	<button onclick="$('#section4').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Texas Highway Magazine</button>
+	<button onclick="$('#section5').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Teach Truth Posters</button>
+	<button onclick="$('#section6').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Backwoods</button>
+	<button onclick="$('#section9').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">The University of Texas</button>
+	<button onclick="$('#section11').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Houghton Miflin Harcourt</button>
+	<button onclick="$('#section12').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">The Construction Industry Institute</button>
+	<button onclick="$('#section13').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Bluebeard</button>				 
+	<button onclick="$('#section14').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Research Exchange</button>
+	<button onclick="$('#section15').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">The Boy With No Heart</button>
+	<button onclick="$('#section16').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Austin Paris</button>				 
+	<button onclick="$('#section17').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">That&#8217;s Unbelievable</button>
+	<button onclick="$('#section19').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Reel Genie</button>
+	<button onclick="$('#sectionmarfa').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Marfa Photo Book</button>				 
+	<button onclick="$('#section21').animatescroll();
+					 $('.designmenu').slideUp();
+					 $('.blackbox').fadeOut();">Dark Dusk</button>
+	</ul>
+	</div>
+	<div class="illustrationmenu"><h1><img src="slide/images/x.png" class="x">illustration</h1>
+	<ul>
+	<button onclick="$('#section1').animatescroll();
+					 $('.illustrationmenu').slideUp();
+					 $('.blackbox').fadeOut();">Burton&#8217;s Big Adventure</button>
+	<button onclick="$('#section2').animatescroll();
+					 $('.illustrationmenu').slideUp();
+					 $('.blackbox').fadeOut();">La Loteria</button>
+	<button onclick="$('#section7').animatescroll();
+					 $('.illustrationmenu').slideUp();
+					 $('.blackbox').fadeOut();">Various Illustrations</button>
+	<button onclick="$('#section8').animatescroll();
+					 $('.illustrationmenu').slideUp();
+					 $('.blackbox').fadeOut();">Peace Posters</button>
+	<button onclick="$('#section10').animatescroll();
+					 $('.illustrationmenu').slideUp();
+					 $('.blackbox').fadeOut();">Ladies Home Journal</button>
+	<button onclick="$('#section13').animatescroll();
+					 $('.illustrationmenu').slideUp();
+					 $('.blackbox').fadeOut();">Bluebeard</button>
+	<button onclick="$('#section15').animatescroll();
+					 $('.illustrationmenu').slideUp();
+					 $('.blackbox').fadeOut();">The Boy With No Heart</button>
+	<button onclick="$('#section18').animatescroll();
+					 $('.illustrationmenu').slideUp();
+					 $('.blackbox').fadeOut();">The Other Fairies</button>
+	<button onclick="$('#section22').animatescroll();
+					 $('.illustrationmenu').slideUp();
+					 $('.blackbox').fadeOut();">Computerworld</button>
+	</ul>
+	</div>
+  </ul>
+</nav>
+	<img class = "dropshadow" src="slide/images/gradient.png"></img>
+
+	<!-- End Nav Menu --> 
+
+	<!-- Nav Menu Script -->
+
+	<script language="javascript">
+
+	$('.designmenu').bind('mousewheel', function(e){
+
+    $(this).scrollTop($(this).scrollTop()-e.originalEvent.wheelDeltaY);
+
+    return false;
+
+	});
+
+	$(".blackbox").hide();
+
+	$(".aboutmenu").hide();
+
+	$(".designmenu").hide();
+
+	$(".illustrationmenu").hide();
+
+	$(".about").click(function(event){
+		if($('.aboutmenu').is(":hidden")) {
+    		$(".aboutmenu").slideDown();
+	}
+	});
+
+	$(".design").click(function(event){
+		if($('.designmenu').is(":hidden")) {
+    		$(".designmenu").slideDown();
+	}
+	});
+
+	$(".design").click(function(event){
+		if($(".blackbox").is(":hidden")) {
+    		$(".blackbox").fadeIn();
+	}
+	});
+
+	$(".illustration").click(function(event){
+		if($('.illustrationmenu').is(":hidden")) {
+    		$(".illustrationmenu").slideDown();
+	}
+	});
+
+	$(".illustration").click(function(event){
+		if($(".blackbox").is(":hidden")) {
+    		$(".blackbox").fadeIn();
+	}
+	});
+
+	$(".about").click(function(event){
+		if($(".blackbox").is(":hidden")) {
+    		$(".blackbox").fadeIn();
+   	}
+	});
+
+	$(".blackbox").click(function() { 
+		if($(".aboutmenu").is(":visible")) {
+            $(".aboutmenu").slideUp();   
+            }  
+	});
+
+	$(".blackbox").click(function(event) { 
+		if($(".blackbox").is(":visible")) {
+            $(".blackbox").fadeOut();      
+          }  
+	});
+
+	$(".x").click(function(event) { 
+		if($(".blackbox").is(":visible")) {
+            $(".blackbox").fadeOut();      
+          }  
+	});
+
+	$(".x").click(function(event) { 
+		if($(".aboutmenu").is(":visible")) {
+            $(".aboutmenu").slideUp();      
+          }  
+	});
+
+	$(".x").click(function(event) { 
+		if($(".designmenu").is(":visible")) {
+            $(".designmenu").slideUp();      
+          }  
+	});
+
+	$(".x").click(function(event) { 
+		if($(".illustrationmenu").is(":visible")) {
+            $(".illustrationmenu").slideUp();      
+          }  
+	});
+
+	$(".blackbox").click(function() { 
+		if($(".designmenu").is(":visible")) {
+            $(".designmenu").slideUp();   
+            }  
+	});
+
+	$(".blackbox").click(function() { 
+		if($(".illustrationmenu").is(":visible")) {
+            $(".illustrationmenu").slideUp();   
+            }  
+	});
+
+	</script>
+
+	<!-- Main Image -->
+	<ul class="body">
+	<li>
+	<div class="background-top"><img class="background" src=slide/images/Background.png><img class="box" src=slide/images/box.png><div class="name">Larry Goode</div></div>
+	</li>
+
+	<!-- Slideshow Images -->
+
+	<li>
+	<div class="white" id="transparent"></div>
+	<div class="white" id="section1"><div class="line"></div><div class="paragraph"><h1>Burton&#8217;s Big Adventure</h1><div class="italic">Burton’s Big Adventure</div> is a picture book about a hairless dog and his misadventures in Italy. <br> Design and illustration by me!</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager"></span>
+		<img class="pics" src="slide/images/burton1.png" alt="burton1">
+		<img class="pics" src="slide/images/burton2.png" alt="burton2">
+		<img class="pics" src="slide/images/burton3.png" alt="burton3">
+		<img class="pics" src="slide/images/burton4.png" alt="burton4">
+		<img class="pics" src="slide/images/burton5.png" alt="burton5">
+		<img class="pics" src="slide/images/burton6.png" alt="burton6">
+		<img class="pics" src="slide/images/burton7.png" alt="burton7">
+	</div>
+	<div class="mobilepics">
+		<img class="pics" src="slide/images/burton1.png" alt="burton1">
+		<img class="pics" class="burton2" src="slide/images/burton2.png" alt="burton2">
+		<img class="pics" class="burton3" src="slide/images/burton3.png" alt="burton3">
+		<img class="pics" src="slide/images/burton4.png" alt="burton4">
+		<img class="pics" src="slide/images/burton5.png" alt="burton5">
+		<img class="pics" src="slide/images/burton6.png" alt="burton6">
+		<img class="pics" src="slide/images/burton7.png" alt="burton7">
+	</div>
+	</div>
+	</li>
+	<li>
+	<div class="grey" id="section2"><div class="paragraph"><h1>La Loteria</h1><div class="italic">La Loteria</div> is a book about a teenage boys magical trip to save his girlfriend from an evil wizard and his devilish gang. I had a great time illustrating, writing and designing this handmade book.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager"></span>
+		<img class="pics" src="slide/images/la1.png" alt="la1">
+		<img class="pics" src="slide/images/la2.png" alt="la2">
+		<img class="pics" src="slide/images/la3.png" alt="la3">
+		<img class="pics" src="slide/images/la4.png" alt="la4">
+		<img class="pics" src="slide/images/la5.png" alt="la5">
+		<img class="pics" src="slide/images/la6.png" alt="la6">
+		<img class="pics" src="slide/images/la7.png" alt="la7">
+	</div>
+	<div class="mobilepics">
+		<img class="pics" src="slide/images/la1.png" alt="la1">
+		<img class="pics" src="slide/images/la2.png" alt="la2">
+		<img class="pics" src="slide/images/la3.png" alt="la3">
+		<img class="pics" src="slide/images/la4.png" alt="la4">
+		<img class="pics" src="slide/images/la5.png" alt="la5">
+		<img class="pics" src="slide/images/la6.png" alt="la6">
+		<img class="pics" src="slide/images/la7.png" alt="la7">
+		</div>
+	</div>
+	</li>
+	<li>
+	<div class="white" id="section3"><div class="line"></div><div class="paragraph"><h1>Various Logos</h1>A range of my logo design for a variety of corporate, retail, and media companies.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section3pager"></span>
+		<img class="pics" src="slide/images/logo1text.png" alt="logo1">
+		<img class="pics" src="slide/images/logo2text.png" alt="logo2">
+		<img class="pics" src="slide/images/logo3text.png" alt="logo3">
+		<img class="pics" src="slide/images/logo4text.png" alt="logo4">
+	</div>
+		<div class="mobilepics">
+		<img class="pics" src="slide/images/logo1text.png" alt="logo1">
+		<img class="pics" src="slide/images/logo2text.png" alt="logo2">
+		<img class="pics" src="slide/images/logo3text.png" alt="logo3">
+		<img class="pics" src="slide/images/logo4text.png" alt="logo4">
+		</div>
+	</div>
+	</li>
+		<li>
+	<div class="grey" id="section4"><div class="line"></div><div class="paragraph"><h1>Texas Highway Magazine</h1>For Texas Highway magazine I illustrated and designed a large foldout timeline for
+	the 100th anniversary of the Texas Department of Transportation. On occasion I
+	also create other illustrations for the magazine: shown is a digital portrait of Nolan Ryan.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz id="slideshow4"
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager"></span>
+		<img class="pics" src="slide/images/highway1.png" alt="highway1">
+		<img class="pics" src="slide/images/highway2.png" alt="highway2">
+	</div>
+	<div class="mobilepics">
+		<img class="pics" src="slide/images/highway1.png" alt="highway1">
+		<img class="pics" src="slide/images/highway2.png" alt="highway2">
+	</div>
+	</div>
+	</li>
+	<li>
+	<div class="white" id="section5"><div class="line"></div><div class="paragraph"><h1>Teach Truth Posters</h1>A series of posters I designed to raise awareness that Texas public schools don’t always teach science&nbsp;based&nbsp;facts.</div>
+	<img class="pics" src="slide/images/teachtruth1.png" alt="teachtruth1">
+	</div>
+	</li>
+	<li>
+	<div class="grey" id="section6"><div class="line"></div><div class="paragraph"><h1>Backwoods</h1>Colateral for the Backwoods, a retail store for campers, bikers, climbers, etc.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section3pager"></span>
+		<img class="pics" src="slide/images/backwoods1.png" alt="backwoods1">
+		<img class="pics" src="slide/images/backwoods2.png" alt="backwoods2">
+		<img class="pics" src="slide/images/backwoods3.png" alt="backwoods3">
+	</div>
+		<div class="mobilepics">
+		<img class="pics" src="slide/images/backwoods1.png" alt="backwoods1">
+		<img class="pics" src="slide/images/backwoods2.png" alt="backwoods2">
+		<img class="pics" src="slide/images/backwoods3.png" alt="backwoods3">
+	</div>
+	</div>
+	</li>
+	<li>
+	<div class="white" id="section7"><div class="line"></div><div class="paragraph"><h1>Various Illustrations</h1>A selection of some of my favorite corporate and editorial illustrations. Most of the time they are painted digitally with collage elements added.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager"></span>
+		<img class="pics" src="slide/images/various1.png" alt="various1">
+		<img class="pics" src="slide/images/various2.png" alt="various2">
+		<img class="pics" src="slide/images/various3.png" alt="various3">
+		<img class="pics" src="slide/images/various4.png" alt="various4">
+		<img class="pics" src="slide/images/various5.png" alt="various5">
+		<img class="pics" src="slide/images/various6.png" alt="various6">
+		<img class="pics" src="slide/images/various7.png" alt="various7">
+		<img class="pics" src="slide/images/various8.png" alt="various8">
+		<img class="pics" src="slide/images/various9.png" alt="various9">
+		<img class="pics" src="slide/images/various10.png" alt="various10">
+	</li>
+	</div>
+		<div class="mobilepics">
+		<img class="pics" src="slide/images/various1.png" alt="various1">
+		<img class="pics" src="slide/images/various2.png" alt="various2">
+		<img class="pics" src="slide/images/various3.png" alt="various3">
+		<img class="pics" src="slide/images/various4.png" alt="various4">
+		<img class="pics" src="slide/images/various5.png" alt="various5">
+		<img class="pics" src="slide/images/various6.png" alt="various6">
+		<img class="pics" src="slide/images/various7.png" alt="various7">
+		<img class="pics" src="slide/images/various8.png" alt="various8">
+		<img class="pics" src="slide/images/various9.png" alt="various9">
+		<img class="pics" src="slide/images/various10.png" alt="various10">
+	</div>
+	</div>
+	<li>
+	<div class="grey" id="section8"><div class="line"></div><div class="paragraph"><h1>Peace Posters</h1>My commentary on peace. Peace is good and we need more of it! Digital painting
+and collage elements.</div>
+		<img class="pics" id="peaceposters1" src="slide/images/peace1.png" alt="peace1">
+		<img class="pics" id="peaceposters" src="slide/images/peace2.png" alt="peace2">
+		<img class="pics" id="peaceposters" src="slide/images/peace3.png" alt="peace3">
+	</div>
+	</li>
+	<li>
+	<div class="white" id="section9"><div class="line"></div><div class="paragraph"><h1>The University of Texas</h1>Catalog design for the University of Texas at Austin Engineering Graduate School.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section3pager"></span>
+		<img class="pics" src="slide/images/ut1.png" alt="ut1">
+		<img class="pics" src="slide/images/ut2.png" alt="ut2">
+		<img class="pics" src="slide/images/ut3.png" alt="ut3">
+	</div>
+		<div class="mobilepics">
+		<img class="pics" src="slide/images/ut1.png" alt="ut1">
+		<img class="pics" src="slide/images/ut2.png" alt="ut2">
+		<img class="pics" src="slide/images/ut3.png" alt="ut3">
+	</div>
+	</li>
+	<li>
+	<div class="grey" id="section10"><div class="line"></div><h1>Ladies Home Journal</h1>An illustration for the Ladies Home Journal for a story about mothers after their kids leave for college.
+	<img class="pics" id="ladieshome" src="slide/images/ladies1.png" alt="ladies1">
+	<li>
+	<div class="white" id="section11"><div class="line"></div><div class="paragraph"><h1>Houghton Mifflin Harcourt</h1>Various design and illustration for publishers Houghton Mifflin Harcourt.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section3pager"></span>
+		<img class="pics" src="slide/images/holt1.png" alt="holt1">
+		<img class="pics" src="slide/images/holt2.png" alt="holt2">
+		<img class="pics" src="slide/images/holt3.png" alt="holt3">
+		<img class="pics" src="slide/images/holt4.png" alt="holt4">
+	</div>
+	<div class="mobilepics">
+	<img class="pics" src="slide/images/holt1.png" alt="holt1">
+		<img class="pics" src="slide/images/holt2.png" alt="holt2">
+		<img class="pics" src="slide/images/holt3.png" alt="holt3">
+		<img class="pics" src="slide/images/holt4.png" alt="holt4">
+		</div>
+	</div>
+	</li>
+	<li>
+	<div class="grey" id="section12"><div class="line"></div><div class="paragraph"><h1>The Construction Industry Institute</h1>Annual report and collateral design for the Construction industry Institute. CII researches and consults on construction industry practices.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section12pager"></span>
+		<img class="pics" src="slide/images/CII1.png" alt="CII1">
+		<img class="pics" src="slide/images/CII2.png" alt="CII2">
+	</div>
+	<div class="mobilepics">
+			<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section12pager"></span>
+		<img class="pics" src="slide/images/CII1.png" alt="CII1">
+		<img class="pics" src="slide/images/CII2.png" alt="CII2">
+	</div>
+	</div>
+	</li>
+	<li>
+	<div class="white" id="section13"><div class="line"></div><div class="paragraph"><h1>Bluebeard</h1>My postmodern version of the fairy tale    
+	<div class="italic">Bluebeard</div>. I illustrated and designed the book—writing a modern version of the story. I set the modern story as footnotes that eventually became longer and took over the book. Very postmodern! The illustrations were made using traditional pastels.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz id="slideshow4"
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section13pager"></span>
+		<img class="pics" src="slide/images/bluebeard1.png" alt="bluebeard1">
+		<img class="pics" src="slide/images/bluebeard2.png" alt="bluebeard2">
+		<img class="pics" src="slide/images/bluebeard3.png" alt="bluebeard3">
+		<img class="pics" src="slide/images/bluebeard4.png" alt="bluebeard4">
+	</div>
+	<div class="mobilepics">
+			<img class="pics" src="slide/images/bluebeard1.png" alt="bluebeard1">
+		<img class="pics" src="slide/images/bluebeard2.png" alt="bluebeard2">
+		<img class="pics" src="slide/images/bluebeard3.png" alt="bluebeard3">
+		<img class="pics" src="slide/images/bluebeard4.png" alt="bluebeard4">
+	</div>
+	</div>
+	</li>
+	<li>
+	<div class="grey" id="section14"><div class="line"></div><div class="paragraph"><h1>Research Exchange</h1>The Research Exchange is a project developed by the University of Texas as a platform for academic researchers to share data. In addition to designing the website I created illustrations for the site.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="altsection14pager"></span>
+		<img class="pics" src="slide/images/REX1.png" alt="REX1">
+		<img class="pics" src="slide/images/REX2.png" alt="REX2">
+	</div>
+	<div class="mobilepics">
+			<img class="pics" src="slide/images/REX1.png" alt="REX1">
+		<img class="pics" src="slide/images/REX2.png" alt="REX2">
+	</div>
+	</div>
+	</li>
+	<li>
+	<div class="white" id="section15"><div class="line"></div><div class="paragraph"><h1>The Boy With No Heart</h1><div class="italic">The Boy With No Heart</div> is about a boy who loses his heart, and his journey to find it. Illustration  and design by me!</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section3pager"></span>
+		<img class="pics" src="slide/images/boy1.png" alt="boy1">
+		<img class="pics" src="slide/images/boy2.png" alt="boy2">
+		<img class="pics" src="slide/images/boy3.png" alt="boy3">
+		<img class="pics" src="slide/images/boy4.png" alt="boy4">
+	</div>
+	<div class="mobilepics">
+			<img class="pics" src="slide/images/boy1.png" alt="boy1">
+		<img class="pics" src="slide/images/boy2.png" alt="boy2">
+		<img class="pics" src="slide/images/boy3.png" alt="boy3">
+		<img class="pics" src="slide/images/boy4.png" alt="boy4">
+	</div>
+	</div>
+	</li>
+	<li>
+	<div class="grey" id="section16"><div class="line"></div><div class="paragraph"><h1>Austin Paris</h1>Paris, France based company specializing in knitwear.<br>The client wanted a retro feel that emphasized an empowered woman look.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section14pager"></span>
+		<img class="pics" src="slide/images/paris1.png" alt="paris1">
+		<img class="pics" src="slide/images/paris2.png" alt="paris2">
+	</div>
+	<div class="mobilepics">
+			<img class="pics" src="slide/images/paris1.png" alt="paris1">
+		<img class="pics" src="slide/images/paris2.png" alt="paris2">
+	</div>
+	</div>
+	</li>
+	<li>
+	<div class="white" id="section17"><div class="line"></div><div class="paragraph"><h1>That&#8217;s Unbelievable</h1><div class="italic">That’s Unbelievable</div> is an experimental book where I combined images and articles from one newspaper issue to create a new narrative and message.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section14pager"></span>
+		<img class="pics" src="slide/images/Unbelievable1.png" alt="Unbelievable1">
+		<img class="pics" src="slide/images/Unbelievable2.png" alt="Unbelievable2">
+		<img class="pics" src="slide/images/Unbelievable3.png" alt="Unbelievable3">
+		<img class="pics" src="slide/images/Unbelievable4.png" alt="Unbelievable4">
+	</div>
+	<div class="mobilepics">
+			<img class="pics" src="slide/images/Unbelievable1.png" alt="Unbelievable1">
+		<img class="pics" src="slide/images/Unbelievable2.png" alt="Unbelievable2">
+		<img class="pics" src="slide/images/Unbelievable3.png" alt="Unbelievable3">
+		<img class="pics" src="slide/images/Unbelievable4.png" alt="Unbelievable4">
+	</div>
+	</div>
+	</li>
+	<li>
+	<div class="grey" id="section18"><div class="line"></div><div class="paragraph"><h1>The Other Fairies</h1>Illustrations for a book called, The Other Fairies, about inappropriate fairies such as The Fart Fairy and the Nosepicking Fairy. Created using digital painting and collage elements.</div>
+	<div>
+	<img class="pics" src="slide/images/fairy1.png" alt="fairy1">
+	</div>
+	</div>
+	</li>
+	<li>
+	<div class="white" id="section19"><div class="line"></div><div class="paragraph"><h1>Reel Genie</h1>Reel Genie is a company that creates videos from customers photos.</div>
+	<div>
+	<img class="pics" src="slide/images/reel1.png" alt="reel1">
+	</div>
+	</div>
+	</li>
+		<li>
+	<div class="grey" id="sectionmarfa"><div class="line"></div><div class="paragraph"><h1>Marfa Photo Book</h1>A book of my photos taken in Marfa, Texas and Big Bend National Park. Design and photos by me of course!</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section3pager"></span>
+		<img class="pics" src="slide/images/marfa1.png" alt="marfa1">
+		<img class="pics" src="slide/images/marfa2.png" alt="marfa2">
+		<img class="pics" src="slide/images/marfa3.png" alt="marfa3">
+		<img class="pics" src="slide/images/marfa4.png" alt="marfa4">
+		<img class="pics" src="slide/images/marfa5.png" alt="marfa5">
+		<img class="pics" src="slide/images/marfa6.png" alt="marfa6">
+	</div>
+	<div class="mobilepics">
+			<img class="pics" src="slide/images/marfa1.png" alt="marfa1">
+		<img class="pics" src="slide/images/marfa2.png" alt="marfa2">
+		<img class="pics" src="slide/images/marfa3.png" alt="marfa3">
+		<img class="pics" src="slide/images/marfa4.png" alt="marfa4">
+		<img class="pics" src="slide/images/marfa5.png" alt="marfa5">
+		<img class="pics" src="slide/images/marfa6.png" alt="marfa6">
+	</div>
+	</div>
+	</li>
+	<div class="white" id="section21"><div class="line"></div><div class="paragraph"><h1>Dark Dusk</h1><div class="italic">Dark Dusk</div> is a human rights story about a girls search for her father after he is arrested for an unknown crime by an unknown government agency.</div>
+	<div>
+	<iframe src="https://player.vimeo.com/video/97539847" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<p><a href="https://vimeo.com/97539847"></a></p>
+	</div>
+	</div>
+	</li>
+	</body>
+	<li>
+	<div class="grey"  id="section22"><div class="line"></div><div class="paragraph"><h1>Computerworld Magazine</h1>Various editorial illustrations for Computerworld Magazine created using digital painting and collage elements.</div>
+	<div class="cycle-slideshow" data-cycle-fx=scrollHorz
+    data-cycle-timeout=10000
+    data-cycle-swipe=true
+    data-cycle-center-horz=true
+    data-cycle-center-vert=true>
+		<span class="cycle-prev"><img src="slide/images/left.png"></span>
+		<span class="cycle-next"><img src="slide/images/right.png"></span>
+		<span class="cycle-pager" id="section3pager"></span>
+		<img class="pics" src="slide/images/comp1.png" alt="comp1">
+		<img class="pics" src="slide/images/comp2.png" alt="comp2">
+	</div>
+	<div class="mobilepics">
+			<img class="pics" src="slide/images/comp1.png" alt="comp1">
+		<img class="pics" src="slide/images/comp2.png" alt="comp2">
+	</div>
+	</div>
+	</li>
+</html>
