@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>in our sea ♪</title>
+  <meta name="description" content="in our sea: music by nathan. also some websites." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♪</text></svg>" />
+</head>
+<body>
+  <main class="wrap">
+
+    <!-- the tape deck: plays "flowers! swallow me!" -->
+    <section class="deck" aria-label="tape player">
+      <pre id="screen" class="screen" role="button" tabindex="0" aria-label="play / pause"></pre>
+      <p class="now"><span class="dim">in our sea — flowers! swallow me!</span><br><span id="nowPlaying"></span></p>
+      <div class="deck-row">
+        <div class="btns">
+          <button id="prevBtn" type="button" aria-label="previous track">&lt;&lt;</button>
+          <button id="playBtn" type="button">play</button>
+          <button id="nextBtn" type="button" aria-label="next track">&gt;&gt;</button>
+        </div>
+        <button id="listBtn" type="button" aria-expanded="false">tracks</button>
+      </div>
+      <div id="tracklist" class="tracklist" hidden></div>
+    </section>
+
+    <nav class="tabs" aria-label="sections">
+      <a href="#home" data-tab="home">home</a>
+      <a href="#websites" data-tab="websites">websites</a>
+      <a href="#music" data-tab="music">music</a>
+    </nav>
+
+    <!-- HOME -->
+    <section id="tab-home" class="tab" data-panel="home">
+      <p>hi, im nathan. i make music as <span class="accent">in our sea</span>.</p>
+      <p>my album <em>flowers! swallow me!</em> came out july 2024. ten songs, thirty minutes. it's in the tape deck up there, just hit play.</p>
+      <p>before that there were a handful of singles, and i played in fits of pleasure. it's all in the music tab.</p>
+      <p>i also dabble in design and programming, mostly websites. a few of those live in the websites tab.</p>
+
+      <p class="gap">heres where to find stuff:</p>
+      <ul class="links">
+        <li><a href="https://open.spotify.com/artist/6W3rwKNj4ThWExWRK7yoi0" target="_blank" rel="noopener">spotify</a> in our sea</li>
+        <li><a href="https://music.apple.com/us/artist/in-our-sea/1476176805" target="_blank" rel="noopener">apple music</a> in our sea, every release</li>
+        <li><a href="#music">music</a> everything i've put out</li>
+        <li><a href="#websites">websites</a> sites i've designed + coded</li>      </ul>
+    </section>
+
+    <!-- MUSIC (filled from main.js) -->
+    <section id="tab-music" class="tab" data-panel="music" hidden>
+      <p>stuff i've made. click <span class="accent">▸ listen</span> to load a player.</p>
+      <ul id="musicList" class="items"></ul>
+    </section>
+
+    <!-- WEBSITES (filled from main.js) -->
+    <section id="tab-websites" class="tab" data-panel="websites" hidden>
+      <p>i dabble. these are sites i've designed and programmed. previews are live, click through to poke at the real thing.</p>
+      <div id="siteList" class="sites"></div>
+    </section>
+
+    <footer class="dim">made by hand · <span id="year"></span></footer>
+  </main>
+
+  <audio id="audio" preload="none"></audio>
+  <script src="main.js"></script>
+</body>
+</html>

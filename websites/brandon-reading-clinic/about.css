@@ -1,0 +1,150 @@
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background: url('../img/bg2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+}
+
+h1, h2, h3, h4, h5, h6, .text-heading {
+  font-family: 'Rufina', serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.tagline-upper {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tagline-lower {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.text-expanded {
+  letter-spacing: 2px;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-lg {
+  font-size: 1.25rem;
+}
+
+.bg-faded {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+hr.divider {
+  border-color: #292b2c;
+  max-width: 250px;
+}
+
+.map-container iframe {
+  pointer-events: none;
+}
+
+.map-container iframe.clicked {
+  pointer-events: auto;
+}
+
+.carousel-control-prev
+
+.carousel-indicators:hover {
+  cursor:pointer;
+}
+
+ol.carousel-indicators:hover {
+  cursor:pointer;
+}
+
+ol.carousel-indicators li {
+  border-radius:50%;
+  width:10px;
+  height:10px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.bird img {
+  display:block;
+  margin:0 auto;
+  width:150px;
+}
+
+.tagline-upper {
+  margin-bottom:10px;
+}
+
+.buffer1 {
+  opacity:0;
+  height:75px;
+}
+
+.navbar-fixed-top {
+  position:fixed;
+  width:100%;
+  z-index:500;
+}
+
+.brcmobile {
+  font-family: 'Rufina';
+  opacity:0.8;
+}
+
+.brcquote {
+  font-size:16pt;
+}
+
+.buffer2 {
+  opacity:0;
+  height:15px;
+}
+
+.brcquote {
+  color:#c10516;
+}
+
+.buffer3 {
+  opacity:0;
+  height:90px;
+}
+
+.brcline {
+  height: 0;
+  margin: 1rem auto;
+  overflow: hidden;
+  width:20%;
+  border-top: 1px solid black;
+}
+
+.brcparagraph {
+  margin-right:10%;
+  margin-left:10%;
+  color:black;
+}
+
+.overflowbrc {
+  height:100px;
+  top:-100px;
+  color:#eae9e8;
+  width:100%;
+  display:block;
+  position:absolute;
+}
+
+.supertall {
+  height:1000px;
+}
